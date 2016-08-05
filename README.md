@@ -15,17 +15,12 @@
 
 建议开发者使用以下环境，这样避免版本带来的问题
 
-* IDE:eclipse，idea
-* DB:Mysql5.5
-* JDK:JAVA 7、J2EE6
-* WEB:Tomcat7
-
-
-##运行环境
-
-* WEB服务器：Weblogic、Tomcat、WebSphere、JBoss、Jetty 等
-* 数据库服务器：Mysql5.5
-* 操作系统：Windows、Linux、Unix 等
+* language：[Java](http://www.oracle.com/technetwork/java/index.html)
+* IDE：[Eclipse](http://www.eclipse.org/)，[IntelliJ IDEA](http://www.jetbrains.com/idea/)
+* JDK：[JDK 7](http://www.oracle.com/technetwork/cn/java/javase/downloads/jdk7-downloads-1880260.html)
+* 数据库：[Mysql5.5](http://dev.mysql.com/downloads/)
+* WEB服务器：[Tomcat 7](http://tomcat.apache.org/download-70.cgi)、[JBoss 6](http://jbossas.jboss.org/downloads)、[Jetty](https://github.com/eclipse/jetty.project) 等
+* 操作系统：[Windows](https://www.microsoft.com/zh-cn/windows)、[Ubuntu](http://www.ubuntu.com/download) 等
 
 
 
