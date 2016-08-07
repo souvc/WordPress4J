@@ -26,6 +26,7 @@
 * 代码托管平台：[Github](https://github.com/souvc/)
 * Jar包管理：[Maven](http://maven.apache.org/)
 * 操作系统：[Windows](https://www.microsoft.com/zh-cn/windows)、[Ubuntu](http://www.ubuntu.com/download) 等
+* 编码方式：UTF-8
 
 
 
