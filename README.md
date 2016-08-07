@@ -65,6 +65,9 @@
 * souvc_cms_usermeta：存储用户的元数据
 * souvc_cms_users：存储用户
 
+详细sql语句可以参照：https://github.com/souvc/SouvcCMS/blob/master/doc/souvccms.sql
+
+
 
 
 
