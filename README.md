@@ -49,8 +49,31 @@
 360网盘下载：https://yunpan.cn/c6kLee2Eyrhgx  访问密码 155c
 
 
+##数据库表设计
 
+说明：WordPress 是一个功能非常强大的博客系统，插件众多，易于扩充功能。安装和使用都非常方便。目前 WordPress 已经成为主流的 Blog 搭建平台。数据库表就是参照WordPress来进行设计的。
 
+souvc_cms_commentmeta：存储评论的元数据
+
+souvc_cms_comments：存储评论
+
+souvc_cms_links：存储友情链接（Blogroll）
+
+souvc_cms_options：存储WordPress系统选项和插件、主题配置
+
+souvc_cms_postmeta：存储文章（包括页面、上传文件、修订）的元数据
+
+souvc_cms_posts：存储文章（包括页面、上传文件、修订）
+
+souvc_cms_term_relationships：存储每个文章、链接和对应分类的关系
+
+souvc_cms_term_taxonomy：存储每个目录、标签所对应的分类
+
+souvc_cms_terms：存储每个目录、标签
+
+souvc_cms_usermeta：存储用户的元数据
+
+souvc_cms_users：存储用户
 
 
 
