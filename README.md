@@ -65,7 +65,13 @@
 * souvc_cms_usermeta：存储用户的元数据
 * souvc_cms_users：存储用户
 
-详细sql语句可以参照：https://github.com/souvc/SouvcCMS/blob/master/doc/souvccms.sql
+详细sql语句可以参照：https://github.com/souvc/SouvcCMS/blob/master/doc/db/souvccms.sql
+
+
+##实体类生成工具
+
+* 根据配置数据库信息，生成实体类。源码可以参照：https://github.com/mybatis/generator
+* 本项目用的实体类生成工具，参照：https://github.com/souvc/SouvcCMS/tree/master/doc/tools/generator
 
 
 
