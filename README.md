@@ -74,7 +74,17 @@
 * 本项目用的实体类生成工具，参照：https://github.com/souvc/SouvcCMS/tree/master/doc/tools/generator
 
 
+##项目文件
 
+项目目录结构
+
+* com.souvc.cms.biz  
+* com.souvc.cms.common.base
+* com.souvc.cms.common.cache
+* com.souvc.cms.controller
+* com.souvc.cms.dao
+* com.souvc.cms.entity   
+* com.souvc.cms.security  
 
 
 
