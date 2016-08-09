@@ -74,6 +74,15 @@
 * 本项目用的实体类生成工具，参照：https://github.com/souvc/SouvcCMS/tree/master/doc/tools/generator
 
 
+##Maven学习教程
+
+* [Windows环境下Apache Maven下载，安装与环境变量配置](http://www.souvc.com/?p=377)
+* [Windows环境下命令行创建java项目](http://www.souvc.com/?p=382)
+* [Maven命令行大全–按照字典顺序排序](http://www.souvc.com/?p=424)
+* [Windows环境下用maven命令行创建javaweb项目](http://www.souvc.com/?p=397)
+* [json-lib 的maven dependency找不到的解决方法](http://www.souvc.com/?p=1350)
+
+
 ##项目文件
 
 项目目录结构
