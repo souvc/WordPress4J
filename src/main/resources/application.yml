@@ -1,0 +1,26 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/w4j??useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    # 自动生成表结构
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+
+
+# Mybatis-plus
+mybatis-plus:
+  # 放在resource目录 classpath:/mapper/*Mapper.xml
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  global-config:
+    sql-parser-cache: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    # 配置JdbcTypeForNull, oracle数据库必须配置
+    jdbc-type-for-null: 'null'
