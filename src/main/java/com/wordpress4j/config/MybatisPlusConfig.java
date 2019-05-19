@@ -5,6 +5,10 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * mybatis 配置
+ * @author souvc
+ */
 @Configuration
 @MapperScan("com.wordpress4j.mapper")
 public class MybatisPlusConfig {

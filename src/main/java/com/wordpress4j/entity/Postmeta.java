@@ -13,6 +13,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
+/**
+ * @author souvc
+ */
 @Data
 @Entity
 @Table(name = TableUtils.TABLE_PREFIX + "postmeta"+ TableUtils.TABLE_SUFFIX)

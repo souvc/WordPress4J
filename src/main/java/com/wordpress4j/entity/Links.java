@@ -15,6 +15,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * @author souvc
+ */
 @Data
 @Entity
 @Table(name = TableUtils.TABLE_PREFIX +"links"+ TableUtils.TABLE_SUFFIX)

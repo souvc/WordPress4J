@@ -12,6 +12,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 
+/**
+ * @author souvc
+ */
 @Data
 @Entity
 @Table(name = TableUtils.TABLE_PREFIX + "comment"+ TableUtils.TABLE_SUFFIX)

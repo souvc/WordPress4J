@@ -11,6 +11,9 @@ import com.wordpress4j.util.TableUtils;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
+/**
+ * @author souvc
+ */
 @Data
 @Entity
 @Table(name = TableUtils.TABLE_PREFIX + "users" + TableUtils.TABLE_SUFFIX)

@@ -3,19 +3,22 @@ package com.wordpress4j.entity;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.wordpress4j.common.SwitchEnum;
+import com.wordpress4j.common.PostStatusEnum;
+import com.wordpress4j.common.PostTypeEnum;
 import com.wordpress4j.util.TableUtils;
 import lombok.Data;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.format.annotation.DateTimeFormat;
 
+/**
+ * @author souvc
+ */
 @Data
 @Entity
 @Table(name = TableUtils.TABLE_PREFIX + "posts"+ TableUtils.TABLE_SUFFIX)
@@ -31,6 +34,7 @@ public class Posts implements Serializable {
     @Column(name = "post_author", nullable = false, length = 20)
     private Long postAuthor;
 
+    @CreatedDate
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Column(name = "post_date")
     private Date postDate;
@@ -39,14 +43,17 @@ public class Posts implements Serializable {
     @Column(name = "post_date_gmt")
     private Date postDateGmt;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "post_status")
-    private String postStatus;
+    private PostStatusEnum postStatus;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "comment_status")
-    private String commentStatus;
+    private SwitchEnum commentStatus;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "ping_status")
-    private String pingStatus;
+    private SwitchEnum pingStatus;
 
     @Column(name = "post_password")
     private String postPassword;
@@ -54,6 +61,7 @@ public class Posts implements Serializable {
     @Column(name = "post_name")
     private String postName;
 
+    @LastModifiedDate
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Column(name = "post_modified")
     private Date postModified;
@@ -71,8 +79,9 @@ public class Posts implements Serializable {
     @Column(name = "menu_order", length = 255)
     private Integer menuOrder;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "post_type", length = 20)
-    private String postType;
+    private PostTypeEnum postType;
 
     @Column(name = "post_mime_type", length = 100)
     private String postMimeType;
