@@ -458,3 +458,12 @@ CREATE TABLE `wp_users` (
 -- Records of wp_users
 -- ----------------------------
 INSERT INTO `wp_users` VALUES ('1', 'souvccms', '$P$BGDswwQo2m5vhi8fqKkNJNDuKIDcw.1', 'souvccms', '708861627@qq.com', '', '2016-08-07 02:02:22', '', '0', 'souvccms');
+
+
+-- ----------------------------
+-- Table structure for wp_users_roles
+-- ----------------------------
+
+create table wp_role (id bigint not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB
+create table wp_users (id bigint not null auto_increment, display_name varchar(250), user_activation_key varchar(255), user_email varchar(100), user_login varchar(60), user_nicename varchar(50), user_pass varchar(255), user_registered datetime, user_status integer, user_url varchar(100), primary key (id)) engine=InnoDB
+create table wp_users_roles (users_id bigint not null, roles_id bigint not null) engine=InnoDB

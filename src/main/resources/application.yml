@@ -2,19 +2,19 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test??useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: 123456
 
   jpa:
     show-sql: true
     # 自动生成表结构
-    generate-ddl: false
+    generate-ddl: true
     hibernate:
       ddl-auto: none
     #不加这句则默认为myisam引擎
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-
+    #open-in-view: true
 
 # Mybatis-plus
 mybatis-plus:
@@ -27,5 +27,6 @@ mybatis-plus:
     cache-enabled: false
     # 配置JdbcTypeForNull, oracle数据库必须配置
     jdbc-type-for-null: 'null'
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 server:
   port: 8081
